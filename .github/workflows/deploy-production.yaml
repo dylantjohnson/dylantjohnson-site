@@ -1,0 +1,16 @@
+name: Deploy to Production
+# Trigger a deployment when master branch is updated.
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  deploy:
+    name: Deployment Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo 'hello there.'
