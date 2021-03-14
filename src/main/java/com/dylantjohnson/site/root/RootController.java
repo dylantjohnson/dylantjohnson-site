@@ -5,8 +5,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class RootController {
+
     @RequestMapping
     public String index() {
         return "Welcome to Dylan's very basic website.";
     }
 }
+
